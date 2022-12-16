@@ -1,0 +1,15 @@
+ok so, I guess we are making this MVP on FFXIV
+lets break down what we have to do. 
+1. create a render like we did with the deploymentTEST 
+    -Create database (done db name ffxiv)
+    -Create tables  (table named minions created)
+    -Insert data  (inserted test_data)
+    -Initialize npm (created package.json/don't forget "type":"module", ran gitignore ext/created .gitignore) 
+    -npm dependencies - express, nodemon, postgres   
+    -Create server file (routes.js/ has basic get route for all data.)
+    -Connect to our database(connected to local database, pushing to git, then making render db)
+    Create some routes
+2. connect to our API (https://ffxivcollect.com/)
+    run several tests to ensure that we can console.log the data from the URL
+    learn and use axios.js to run fetch commands
+---lets stop here for now--- once this is complete we can write more and move on.

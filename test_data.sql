@@ -1,0 +1,1 @@
+INSERT INTO minions (name, owns, location) VALUES ('Cherry Bomb', false, 'Minion Trader - The Gold Saucer - 2,400 Gil')
