@@ -2,14 +2,13 @@
 //import axios from "axios";
 //require not defined and there is no package.json file to dfine type:module so import wont work
 
-// import axios from "axios";
 
 
-fetch("https://ffxiv-collectables.onrender.com/minions")
-    .then((res) => res.json())
-    .then((data) => {
-        console.log(data)
-    });
+// fetch("https://ffxiv-collectables.onrender.com/minions")
+//     .then((res) => res.json())
+//     .then((data) => {
+//         console.log(data)
+//     });
 
 // axios({
 //     method: 'get',
@@ -19,12 +18,12 @@ fetch("https://ffxiv-collectables.onrender.com/minions")
 //     console.log(response.data)
 // });
 
-// axios({
-//     method: 'get',
-//     url: '/minions',
-//     baseURL: 'https://ffxiv-collectables.onrender.com/'
-// }).then((response)=>{
-//     console.log(response.data)
-// })
+axios({
+    method: 'get',
+    url: '/minions',
+    baseURL: 'https://ffxiv-collectables.onrender.com/'
+}).then((response)=>{
+    console.log(response.data)
+})
 //can use object key (transfromRequest) to transform the request data
 // similar with (transformResponse) but for res data
