@@ -7,8 +7,11 @@ lets break down what we have to do.
     -Initialize npm (created package.json/don't forget "type":"module", ran gitignore ext/created .gitignore) 
     -npm dependencies - express, nodemon, postgres   
     -Create server file (routes.js/ has basic get route for all data.)
-    -Connect to our database(connected to local database, pushing to git, then making render db)
-    Create some routes
+    -Connect to our database(connected to local database, pushing to git, made render db/ waiting on success
+     now adding database URL to routes.js/ lastly inserting the data from test_data)
+     (this is the URL to add files look for -f 
+     PGPASSWORD=NmvvR0ExfRM7CT0Bz2aFwa4RthUrL20j psql -h dpg-ceecv29gp3jlc78tipe0-a.oregon-postgres.render.com -U ffxiv_collectables_user -f test_data.sql ffxiv_collectables)
+    Create some routes(will return to this after connecting to API)
 2. connect to our API (https://ffxivcollect.com/)
     run several tests to ensure that we can console.log the data from the URL
     learn and use axios.js to run fetch commands
