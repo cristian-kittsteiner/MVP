@@ -8,7 +8,7 @@ let sql = postgres({
 //'?ssl=true'
 let app = express();
 app.use(express.json());
-app.use(express.static("./client"));
+app.use(express.static("./public"));
 
 app.get('/minions', async (req, res) => {
     res.send( await sql`SELECT * FROM minions`)
