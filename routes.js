@@ -1,5 +1,6 @@
 import express from "express";
 import postgres from "postgres"; 
+import axios from "axios";
 
 let sql = postgres("postgres://ffxiv_collectables_user:NmvvR0ExfRM7CT0Bz2aFwa4RthUrL20j@dpg-ceecv29gp3jlc78tipe0-a.oregon-postgres.render.com/ffxiv_collectables?ssl=true");
 //'?ssl=true'
