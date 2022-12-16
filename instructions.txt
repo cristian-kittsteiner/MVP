@@ -5,7 +5,7 @@ lets break down what we have to do.
     -Create tables  (table named minions created)
     -Insert data  (inserted test_data)
     -Initialize npm (created package.json/don't forget "type":"module", ran gitignore ext/created .gitignore) 
-    -npm dependencies - express, nodemon, postgres   
+    -npm dependencies - express, nodemon, postgres, axios  
     -Create server file (routes.js/ has basic get route for all data.)
     -Connect to our database(connected to local database, pushing to git, made render db/ waiting on success
      now adding database URL to routes.js/ lastly inserting the data from test_data)
