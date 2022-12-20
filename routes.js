@@ -7,7 +7,7 @@ let sql = postgres({
     password : '0'
 })
 
-// ({database : 'ffxiv',password : 'Kryzztian1!'})
+// ({database : 'ffxiv',password : '0'})
 // use below when trying to access server, use above when trying to test on localhost
 //("postgres://ffxiv_collectables_user:NmvvR0ExfRM7CT0Bz2aFwa4RthUrL20j@dpg-ceecv29gp3jlc78tipe0-a.oregon-postgres.render.com/ffxiv_collectables?ssl=true");
 //'?ssl=true'
