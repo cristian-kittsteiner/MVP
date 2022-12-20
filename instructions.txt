@@ -12,7 +12,15 @@ lets break down what we have to do.
      (this is the URL to add files look for -f 
      PGPASSWORD=NmvvR0ExfRM7CT0Bz2aFwa4RthUrL20j psql -h dpg-ceecv29gp3jlc78tipe0-a.oregon-postgres.render.com -U ffxiv_collectables_user -f test_data.sql ffxiv_collectables)
     Create some routes(will return to this after connecting to API)
+    Create HTML to make searchbar and search button
+    Ensure value from search bar is returned to the console properly
 2. connect to our API (https://ffxivcollect.com/)
     run several tests to ensure that we can console.log the data from the URL
     learn and use axios.js to run fetch commands
+    create get route- this grabs all minions in user db
+    create post route- this posts minion using add button
+    create patch route- this will update T/F on minion.owns
+    create delete route- this will delete minion in user db. ensure you have a "Are you suer you wish to 
+    delete minion alert thingy
+    connect all of them between app.js and routes.js
 ---lets stop here for now--- once this is complete we can write more and move on.
