@@ -10,5 +10,21 @@
 </head>
 <body>
     <h1>Test for FFXIV minion collectables</h1>
+
+    <!-- <form action="https://ffxivcollect.com/api/minions" method="get"> -->
+        <label>Minion:</label><br>
+        <input type="text" id="search" name="name_en_start"><br>
+        <!-- name value in line 16 changes the end of the URL
+        EX: name="search" makes this URL https://ffxivcollect.com/api/minions?Search=Wind-up+Airship  
+        EX: name="name_en_start" makes this URL https://ffxivcollect.com/api/minions?name_en_start=Wind-up+Airship-->
+        <button id ='button'type="button">Search</button>
+        <button id ='list' type="button">Show Minion list</button>
+        <!-- change type to submit to make button work again -->
+      <!-- </form> -->
+      <footer></footer>
+      <table id="minion_list">
+        <thead>
+        </thead>
+      </table>
 </body>
 </html>
