@@ -49,7 +49,7 @@ newButton.addEventListener("click", () =>{
     crudFunc.searchMinion().then((response)=>{
     let minionName = response.data.results[0].name
     let minionLoc = response.data.results[0].sources[0].type + ' ' + response.data.results[0].sources[0].text;
-        axios.post('http://localhost:3000/minions', {
+        axios.post('https://ffxiv-collectables.onrender.com/minions', {
             name: minionName,
             owns: false,
             location: minionLoc
@@ -59,7 +59,7 @@ newButton.addEventListener("click", () =>{
 })
 
 listButton.onclick = function() {
-    axios.get('http://localhost:3000/minions').then((response) =>{
+    axios.get('https://ffxiv-collectables.onrender.com/minions').then((response) =>{
         if(myTable.rows.length !== response.data.length || myTable.rows.length <= response.data.length ){
             myTable.innerText = "";
             for (let i = 0; i < response.data.length; i++) {
@@ -71,11 +71,11 @@ listButton.onclick = function() {
                 checkbox.value = owns;
                 checkbox.addEventListener('change', () => {
                     if(response.data[i].owns === true){
-                        axios.patch(`http://localhost:3000/minions/${response.data[i].id}`,{
+                        axios.patch(`https://ffxiv-collectables.onrender.com/minions/${response.data[i].id}`,{
                             owns: false
                         })
                     } else {
-                        axios.patch(`http://localhost:3000/minions/${response.data[i].id}`,{
+                        axios.patch(`https://ffxiv-collectables.onrender.com/minions/${response.data[i].id}`,{
                             owns: true
                         })
                     }
@@ -86,7 +86,7 @@ listButton.onclick = function() {
                 deleteButton.innerText = "delete"
                 deleteButton.addEventListener('click', ()=>{
                     if(confirm(`Are you sure you want to remove ${name}?`) == true){
-                        axios.delete(`http://localhost:3000/minions/${response.data[i].id}`)
+                        axios.delete(`https://ffxiv-collectables.onrender.com/minions/${response.data[i].id}`)
                     }
                 })
                 let row = myTable.insertRow(-1);

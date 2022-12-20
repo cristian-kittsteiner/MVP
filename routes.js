@@ -2,10 +2,7 @@ import express, { json } from "express";
 import postgres from "postgres"; 
 
 
-let sql = postgres({
-    database : 'ffxiv',
-    password : '0'
-})
+let sql = postgres("postgres://ffxiv_collectables_user:NmvvR0ExfRM7CT0Bz2aFwa4RthUrL20j@dpg-ceecv29gp3jlc78tipe0-a.oregon-postgres.render.com/ffxiv_collectables?ssl=true")
 
 // ({database : 'ffxiv',password : '0'})
 // use below when trying to access server, use above when trying to test on localhost
