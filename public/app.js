@@ -82,6 +82,7 @@ listButton.onclick = function() {
                 deleteButton.id = `button${i}`
                 deleteButton.className = 'delete';
                 deleteButton.type = 'button';
+                deleteButton.title = 'Delete!';
                 deleteButton.addEventListener('click', ()=>{
                     if(confirm(`Are you sure you want to remove ${name}?`) == true){
                         axios.delete(`https://ffxiv-collectables.onrender.com/minions/${response.data[i].id}`)
