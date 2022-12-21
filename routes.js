@@ -14,7 +14,7 @@ app.use(express.static("./public"));
 
 app.get('/minions', async (req, res) => {
     let minionsList = await sql`SELECT * FROM minions`;
-    res.send( minionsList)
+    res.send(minionsList)
 })
 
 app.get('/minions/:id', async (req, res) => {
@@ -29,7 +29,7 @@ app.get('/minions/:id', async (req, res) => {
 
 app.post('/minions' , async (req, res) => {
     let minion = req.body;
-    let {name, owns, location } = minion;
+    let {name, owns, location} = minion;
     res.send(await sql`INSERT INTO minions 
         (name, owns, location) 
         VALUES

@@ -1,0 +1,165 @@
+
+
+body {
+    background: url(https://media.macphun.com/img/uploads/macphun/blog/1458/mountainphotography.jpg) no-repeat center center fixed;
+    background-size: cover;
+    display: grid;
+    grid-template: 200px / 15% auto 15%;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+#div8 {
+    display: grid;
+    grid-template: 196px / auto auto auto;
+}
+
+#div8 img, #div8 div, #div8 button {
+    background-color: rgba(65, 65, 65, 0.4);
+    border: 2px solid rgb(252, 252, 252);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+}
+
+.minion_list{
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.delete{
+    background-image: url(https://png.pngtree.com/png-vector/20190115/ourmid/pngtree-vector-trash-icon-png-image_318075.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    /* put the height and width of your image here */
+    height: 20px;
+    width: 20px;
+    border: none;
+  }
+
+#add{
+    height: 196px;
+    width: 196px;
+    background-image: url('https://static1-us.millenium.gg/articles/3/16/95/3/@/174747-ffxiv-main-story-quests-article_m-1.png');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border: none;
+    background-size: 400%;
+    cursor: pointer;
+}
+
+#list {
+    height: 150px;
+    width: 150px;
+    background-image: url('https://static.thenounproject.com/png/2360143-200.png');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border: none;
+    background-size: cover;
+    cursor: pointer;
+}
+
+#modalBtn {
+    height: 150px;
+    width: 150px;
+    background-image: url('https://static.wikia.nocookie.net/finalfantasy/images/b/b7/FFXIV_Main_Scenario_Quest_Icon.png');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border: none;
+    background-size: cover;
+    cursor: pointer;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: rgb(252, 252, 252, 0.4);
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: rgb(0, 0, 0);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  
+
+  
+  .search {
+    width: 500px;
+    height: 40px;
+    margin: 60px auto;
+    background: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    border: 1px solid #fff;
+  }
+  .search input {
+    width: 370px;
+    padding: 10px 5px;
+    float: left;
+    color: rgb(255, 246, 246);
+    border: 0;
+    background: transparent;
+    border-radius: 3px 0 0 3px;
+  }
+  .search input:focus {
+    outline: 0;
+    background: transparent;
+  }
+  .search button {
+    position: relative;
+    float: right;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    height: 40px;
+    width: 120px;
+    color: #fff;
+    background: transparent;
+    border-left: 1px solid #fff;
+    border-radius: 0 3px 3px 0;
+  }
+  .search button:hover {
+    background: #fff;
+    color: #444;
+  }
+  .search button:active {
+    box-shadow: 0px 0px 12px 0px #e1e1e1;
+  }
+  .search button:focus {
+    outline: 0;
+  }

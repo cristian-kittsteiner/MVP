@@ -7,24 +7,41 @@
     <title>FFXIV TEST</title>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <script defer src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Test for FFXIV minion collectables</h1>
+    <div1></div1>
+    <header2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Final_Fantasy_logo_with_japanese_name.svg/640px-Final_Fantasy_logo_with_japanese_name.svg.png">  
+    </header2>
+    <div3></div3>
+    <div4></div4>
+    <div5>
+        <form class="search" action="">
+            <input type="text" id="search" name="name_en_start" size="50">
+            <button id ='button' type="button">Search</button>   
+        </form>
+            <button id="modalBtn" title="My list"></button>
+            <button id ='list' type="button" title="Refresh list"></button>
+    </div5>    
+    <div6></div6>
+    <div7>
+        
+    </div7>
+      <div8 id="div8">
+        
+      </div8>
+      <div9>
+      </div9>
 
-    <!-- <form action="https://ffxivcollect.com/api/minions" method="get"> -->
-        <label>Minion:</label><br>
-        <input type="text" id="search" name="name_en_start"><br>
-        <!-- name value in line 16 changes the end of the URL
-        EX: name="search" makes this URL https://ffxivcollect.com/api/minions?Search=Wind-up+Airship  
-        EX: name="name_en_start" makes this URL https://ffxivcollect.com/api/minions?name_en_start=Wind-up+Airship-->
-        <button id ='button'type="button">Search</button>
-        <button id ='list' type="button">Show Minion list</button>
-        <!-- change type to submit to make button work again -->
-      <!-- </form> -->
-      <footer></footer>
-      <table id="minion_list">
-        <thead>
-        </thead>
-      </table>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <table class="minion_list">
+            <thead>
+            </thead>
+          </table>
+        </div>
+      </div>    
 </body>
 </html>
